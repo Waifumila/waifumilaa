@@ -1,65 +1,76 @@
-.game {
-    width:600px;
-    height:200px;
-    border:1px solid black;
-    margin: auto;
+/* Basic styling for the website */
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('img/PHOTO-2024-12-11-20-05-40.jpg');
+    background-size: cover;
+    color: white;
 }
 
-
-#dino {
-    width:50px;
-    height:50px;
-  background-image: url(images/dino.png);
-    background-size:50px 50px;
-    position:relative;
-    top:150px;
+.container {
+    text-align: center;
+    padding: 100px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    position: absolute;
 }
 
-.jump {
-    animation:jump 0.3s linear;
+.heading {
+    font-size: 3rem;
+    color: #FFFF99;
+    margin-bottom: 20px;
 }
 
-@keyframes jump{
-    0% {
-        top: 150px;
-    }
-    
-    30% {
-        top:130px;
-    }
+.welcome-message {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
 
-    50% {
-        top:80px;
-    }
+input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    margin-bottom: 10px;
+    width: 200px;
+}
 
-    80% {
-        top:130px;
-    }
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #FF4C4C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
 
-    100% {
-        top:150px;
-    }
-    }
+button:hover {
+    background-color: #FF2A2A;
+}
 
-    #cactus{
-        width:20px;
-        height:40px;
-        position:relative;
-        top:110px;
-        left:580px;
+footer {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #FFD700;
+}
 
-        background-image: url(images/cactus.png);
-        background-size:20px 40px;
+/* Bible Verse Style */
+#bibleVerse {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #FFFF99;
+}
 
-        animation:block is infinite linear;
-    }
-
-    @keyframes block {
-        0% {
-            left:580px;
-        }
-
-        100% {
-            left:-20px;
-        }
-    }
+.imgs{
+    height: 100%;
+    width: 100%;
+}
